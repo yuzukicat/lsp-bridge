@@ -83,8 +83,6 @@
 (defvar acm-library-path (expand-file-name "acm" (if load-file-name
                                                      (file-name-directory load-file-name)
                                                    default-directory)))
-(add-to-list 'load-path acm-library-path t)
-(require 'acm-frame)
 
 (require 'lsp-bridge-epc)
 (require 'lsp-bridge-ref)
